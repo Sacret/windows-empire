@@ -1,0 +1,15 @@
+{
+  "name": "subtheme",
+  "version": "1.0.0",
+  "description": "To help consolidate and remove possible future inconsistencies, the documentation for this sub-theme starter kit has been moved to: http://drupal.org/node/1978010.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-less": "^3.3.0",
+    "path": "^0.12.7"
+  }
+}
