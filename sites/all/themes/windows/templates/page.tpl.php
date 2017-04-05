@@ -125,28 +125,6 @@
 
 </header> <!-- /#page-header -->
 
-<section class="container-fluid">
-  <div class="row">
-    <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="null">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="header-bg header-bg-1"></div>
-        </div>
-        <div class="item">
-          <div class="header-bg header-bg-2"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <div class="main-container <?php print $container_class; ?>">
   <div class="container">
     <div class="row">
