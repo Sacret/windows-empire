@@ -7546,6 +7546,9 @@ html,
 body {
   font-family: 'PT Sans Narrow', sans-serif;
 }
+body {
+  margin-bottom: 40px;
+}
 @media (min-width: 992px) {
   .navbar {
     display: flex;
@@ -7651,6 +7654,7 @@ body {
   outline: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(to bottom, #009abf, #008eb0);
   transition: background 1s ease-out 0.5s;
+  text-align: center;
 }
 .menu li a {
   color: #fff;
@@ -7702,8 +7706,11 @@ body {
 .footer {
   background: #0e1820;
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .view-example .views-field-field-example-photo {
   margin-bottom: 5px;
@@ -7725,9 +7732,35 @@ body {
 .view-catalogue .views-field-title:hover a {
   color: #009abf;
 }
+.view-categories {
+  text-align: center;
+}
+.view-categories .col {
+  margin-bottom: 30px;
+}
+.view-categories .views-field-name {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.view-categories .views-field-name:hover a {
+  color: #009abf;
+}
 .views-field-field-good-photo img {
   margin: auto;
 }
 .field-type-text-with-summary p {
   text-indent: 25px;
+}
+.field-name-field-good-photos img {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  float: left;
+}
+.custom-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.custom-footer a {
+  color: #fff;
 }

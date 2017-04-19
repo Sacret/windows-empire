@@ -11,6 +11,10 @@ html, body {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
+body {
+  margin-bottom: 40px;
+}
+
 .navbar {
   @media (min-width: @screen-md) {
     display: flex;
@@ -131,6 +135,7 @@ html, body {
     outline: 1px solid rgba(255,255,255,0.2);
     background: linear-gradient(to bottom, @brand-color, darken(@brand-color, 3%));
     transition: background 1s ease-out 0.5s;
+    text-align: center;
 
     a {
       color: #fff;
@@ -186,8 +191,11 @@ html, body {
 .footer {
   background: darken(@bg-color, 20%);
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .view-example {
@@ -217,10 +225,42 @@ html, body {
   }
 }
 
+.view-categories {
+  text-align: center;
+
+  .col {
+    margin-bottom: 30px;
+  }
+
+  .views-field-name {
+    font-size: 16px;
+    text-transform: uppercase;
+    &:hover a {
+      color: @brand-color;
+    }
+  }
+}
+
 .views-field-field-good-photo img {
   margin: auto;
 }
 
 .field-type-text-with-summary p {
   text-indent: 25px;
+}
+
+.field-name-field-good-photos img {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  float: left;
+}
+
+.custom-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
+  }
 }
